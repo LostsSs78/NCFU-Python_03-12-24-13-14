@@ -6,8 +6,8 @@ from random import uniform
 
 
 if __name__ == '__main__':
-    january = tuple([round(uniform(0, 110), 2) for i in range(31)])
-    march = tuple([round(uniform(0, 110), 2) for i in range(31)])
+    january = tuple([round(uniform(0, 110), 2) for _ in range(31)])
+    march = tuple([round(uniform(0, 110), 2) for _ in range(31)])
     variants = ["в январе", "в марте"]
 
     rain_for_january = reduce(lambda x, y: x + y, january)

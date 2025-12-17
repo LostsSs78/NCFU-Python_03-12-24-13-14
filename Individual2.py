@@ -6,7 +6,7 @@ from random import uniform
 
 
 if __name__ == '__main__':
-    my_list = [round(uniform(-10, 10), 2) for i in range(7)]
+    my_list = [round(uniform(-10, 10), 2) for _ in range(7)]
 
     # Отфильтровываем все значения, которые больше нуля, а затем функцией reduce складываем полученные значения
     Sum = reduce(lambda x, y: x + y, filter(lambda x: x <= 0, my_list))
